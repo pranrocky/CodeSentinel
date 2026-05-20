@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Data — index is rebuilt on first run; patterns are re-generated
+data/index/
+data/bug_patterns/
+
+# Ruff cache
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp workspace created at runtime
+/tmp/codesentinel_workspace/
+
+# Claude Code
+.claude/settings.local.json
