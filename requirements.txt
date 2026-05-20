@@ -1,0 +1,21 @@
+# LLM & Agent
+langchain-core
+langchain-openai
+langgraph
+
+# RAG & Indexing
+llama-index-core
+llama-index-embeddings-huggingface
+llama-index-vector-stores-faiss
+
+# Vector store backend
+faiss-cpu
+
+# UI
+gradio
+
+# Repo loading
+gitpython
+
+# Linter (used by run_linter tool)
+ruff
