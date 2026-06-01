@@ -1,0 +1,325 @@
+[
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_JAVA_Keys.createRawAny",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Construct a Key from a Long or String id\n@param id must be either Long or String",
+    "success": true,
+    "error": "",
+    "latency_seconds": 7.932492733001709,
+    "tools_called": [
+      "search_symbol"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Keys.createRawAny",
+      "createRawAny",
+      "createRaw",
+      "IllegalArgumentException"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 3.0,
+    "response": "It seems that the function `constructKeyFromId` is not present in the Java codebase of the repository. If you have more details about where this function might be located or what it does, I can help you search for similar functions or provide guidance on how to implement it if needed.",
+    "timestamp": "2026-06-01T20:52:47.571837"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_JAVASCRIPT_listen",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: /*\nEjsElectron.listen() -- Start intercepting requests on the 'file:' protocol, looking for '.ejs' files.\nIt is not necessary to call this function up-front, as ejs-electron starts listening as soon as it's loaded.\nUse this only to start listening again after calling EjsElectron.stopListening().",
+    "success": true,
+    "error": "",
+    "latency_seconds": 8.118886232376099,
+    "tools_called": [
+      "search_symbol"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "listen",
+      "EjsElectron",
+      "interceptBufferProtocol",
+      "protocolListener"
+    ],
+    "key_phrase_coverage": 0.5,
+    "accuracy_score": 1.0,
+    "response": "It seems that the function `EjsElectron.listen()` is not present in the specified repository. Please ensure that you are looking for the correct function name and that it exists within the codebase.\n\nIf you have any additional information or need to search for a different symbol, please provide more details.",
+    "timestamp": "2026-06-01T20:52:59.602280"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_JAVA_Keys.createRawAny",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Construct a Key from a Long or String id\n@param id must be either Long or String",
+    "success": true,
+    "error": "",
+    "latency_seconds": 9.715131044387817,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Keys.createRawAny",
+      "createRawAny",
+      "createRaw",
+      "IllegalArgumentException"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 3.0,
+    "response": "To locate the implementation of the Java function that constructs a Key from a Long or String id, I will first use `universal_grep` to search for the method signature in the repository. This approach is suitable because it works across different programming languages and can help identify where the function might be defined.\n\n```json\n{\n  \"name\": \"universal_grep\",\n  \"arguments\": {\n    \"search_term\": \"Construct a Key from a Long or String id\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```",
+    "timestamp": "2026-06-01T20:53:12.765696"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_JAVASCRIPT_listen",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: /*\nEjsElectron.listen() -- Start intercepting requests on the 'file:' protocol, looking for '.ejs' files.\nIt is not necessary to call this function up-front, as ejs-electron starts listening as soon as it's loaded.\nUse this only to start listening again after calling EjsElectron.stopListening().",
+    "success": true,
+    "error": "",
+    "latency_seconds": 13.412412643432617,
+    "tools_called": [
+      "universal_grep"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 1.0,
+    "key_phrases": [
+      "listen",
+      "EjsElectron",
+      "interceptBufferProtocol",
+      "protocolListener"
+    ],
+    "key_phrase_coverage": 0.5,
+    "accuracy_score": 3.0,
+    "response": "It seems that the function `EjsElectron.listen()` is not present in the files that were searched. To further investigate, I will list all the JavaScript files in the repository and then read the core entry points to see if the function might be defined there.\n\n1. List all JavaScript files in the repository.\n2. Read the main entry point files to check for the definition of `EjsElectron.listen()`.\n\n```json\n{\"name\": \"list_repo_files\", \"arguments\": {\"repo_path\":\"/home/pran/PycharmProjects/CodeSentinel\"}}\n```",
+    "timestamp": "2026-06-01T20:53:29.866425"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_JAVA_Keys.createRawAny",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Construct a Key from a Long or String id\n@param id must be either Long or String",
+    "success": true,
+    "error": "",
+    "latency_seconds": 12.225638628005981,
+    "tools_called": [
+      "universal_grep",
+      "list_repo_files"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 1.0,
+    "key_phrases": [
+      "Keys.createRawAny",
+      "createRawAny",
+      "createRaw",
+      "IllegalArgumentException"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "It seems that the function \"Construct a Key from a Long or String id\" is not present in the listed files. Please provide more details or clarify if there's another name for this function.",
+    "timestamp": "2026-06-01T20:53:45.716028"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_JAVASCRIPT_listen",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: /*\nEjsElectron.listen() -- Start intercepting requests on the 'file:' protocol, looking for '.ejs' files.\nIt is not necessary to call this function up-front, as ejs-electron starts listening as soon as it's loaded.\nUse this only to start listening again after calling EjsElectron.stopListening().",
+    "success": true,
+    "error": "",
+    "latency_seconds": 12.775835990905762,
+    "tools_called": [
+      "universal_grep"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 1.0,
+    "key_phrases": [
+      "listen",
+      "EjsElectron",
+      "interceptBufferProtocol",
+      "protocolListener"
+    ],
+    "key_phrase_coverage": 0.5,
+    "accuracy_score": 3.0,
+    "response": "It seems that the function `EjsElectron.listen()` is not present in the JavaScript files within the repository. Please verify the function name or provide more context about where this function might be implemented. If it's part of a specific library or module, you may need to check the documentation or source code of that library.\n\nIf you have any additional information or if there's another function you'd like to investigate, please let me know!",
+    "timestamp": "2026-06-01T20:54:02.315577"
+  },
+  {
+    "model": "phi3:latest",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_JAVA_Keys.createRawAny",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Construct a Key from a Long or String id\n@param id must be either Long or String",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/phi3:latest does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.016832828521728516,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Keys.createRawAny",
+      "createRawAny",
+      "createRaw",
+      "IllegalArgumentException"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T20:54:06.390468"
+  },
+  {
+    "model": "phi3:latest",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_JAVASCRIPT_listen",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: /*\nEjsElectron.listen() -- Start intercepting requests on the 'file:' protocol, looking for '.ejs' files.\nIt is not necessary to call this function up-front, as ejs-electron starts listening as soon as it's loaded.\nUse this only to start listening again after calling EjsElectron.stopListening().",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/phi3:latest does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.013042926788330078,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "listen",
+      "EjsElectron",
+      "interceptBufferProtocol",
+      "protocolListener"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T20:54:10.442266"
+  },
+  {
+    "model": "phi3:latest",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_JAVA_Keys.createRawAny",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Construct a Key from a Long or String id\n@param id must be either Long or String",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/phi3:latest does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.021315336227416992,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Keys.createRawAny",
+      "createRawAny",
+      "createRaw",
+      "IllegalArgumentException"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T20:54:14.498862"
+  },
+  {
+    "model": "phi3:latest",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_JAVASCRIPT_listen",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: /*\nEjsElectron.listen() -- Start intercepting requests on the 'file:' protocol, looking for '.ejs' files.\nIt is not necessary to call this function up-front, as ejs-electron starts listening as soon as it's loaded.\nUse this only to start listening again after calling EjsElectron.stopListening().",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/phi3:latest does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.015486001968383789,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "listen",
+      "EjsElectron",
+      "interceptBufferProtocol",
+      "protocolListener"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T20:54:18.539235"
+  },
+  {
+    "model": "phi3:latest",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_JAVA_Keys.createRawAny",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Construct a Key from a Long or String id\n@param id must be either Long or String",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/phi3:latest does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.02076864242553711,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Keys.createRawAny",
+      "createRawAny",
+      "createRaw",
+      "IllegalArgumentException"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T20:54:22.594258"
+  },
+  {
+    "model": "phi3:latest",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_JAVASCRIPT_listen",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: /*\nEjsElectron.listen() -- Start intercepting requests on the 'file:' protocol, looking for '.ejs' files.\nIt is not necessary to call this function up-front, as ejs-electron starts listening as soon as it's loaded.\nUse this only to start listening again after calling EjsElectron.stopListening().",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/phi3:latest does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.02774190902709961,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "listen",
+      "EjsElectron",
+      "interceptBufferProtocol",
+      "protocolListener"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T20:54:26.653785"
+  }
+]

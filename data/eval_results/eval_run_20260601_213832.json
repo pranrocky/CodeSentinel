@@ -1,0 +1,359 @@
+[
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_JAVASCRIPT_planner",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: Creates a new planner\n\n@param {object} origin - The origin system definition\n@param {object} dest - The destination system definition\n@param {object} opts - The options",
+    "success": true,
+    "error": "",
+    "latency_seconds": 9.990506649017334,
+    "tools_called": [
+      "search_symbol",
+      "universal_grep"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 1.0,
+    "key_phrases": [
+      "planner",
+      "TaskPlanner",
+      "generateCommands",
+      "cloneDeep"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "It seems that the function `createNewPlanner` is not present in the repository. Please verify the function name and try again, or provide more context about where this function might be located or what it does.",
+    "timestamp": "2026-06-01T21:34:54.865430",
+    "human_score": 2.0,
+    "human_feedback": "Poor answer quality, generic responses."
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_JAVA_Booleans.valueOf",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Parses the given {@code String} into a {@code Boolean}. This method\nreturns {@code true} if the given {@code String} contains \"true\",\n\"yes\", \"1\" or \"on\".\n\n@param bool the {@code String} to parse.\n\n@return the parsed {@code Boolean}.\n\n@throws NullPointerException if {@code bool} is {@code null}.",
+    "success": true,
+    "error": "",
+    "latency_seconds": 9.412576913833618,
+    "tools_called": [
+      "search_symbol",
+      "universal_grep"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 1.0,
+    "key_phrases": [
+      "Booleans.valueOf",
+      "valueOf",
+      "replaceAll",
+      "equalsIgnoreCase"
+    ],
+    "key_phrase_coverage": 0.5913035691243648,
+    "accuracy_score": 1.0,
+    "response": "It seems that the function `parseBoolean` is not present in the repository. If you have any other questions or need further assistance, feel free to ask!",
+    "timestamp": "2026-06-01T21:35:07.884290",
+    "human_score": 2.0,
+    "human_feedback": "Poor answer quality, generic responses."
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_GO_Validate",
+    "language": "go",
+    "query": "Explain and locate the implementation for the go function that performs: /* polymorph RouteWrapper error false */\n/* polymorph RouteWrapper message false */\n/* polymorph RouteWrapper route false */\n// Validate validates this route wrapper",
+    "success": true,
+    "error": "",
+    "latency_seconds": 8.192015409469604,
+    "tools_called": [
+      "search_symbol"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Validate",
+      "RouteWrapper",
+      "validateError",
+      "validateRoute"
+    ],
+    "key_phrase_coverage": 0.6021186610867459,
+    "accuracy_score": 3.0,
+    "response": "It seems that the function `Validate` was not found in the specified repository. Please ensure that the function name is correct and that it exists within the codebase.\n\nIf you have any additional details or if there's a different function you're looking for, please provide them so I can assist you further.",
+    "timestamp": "2026-06-01T21:35:19.392219",
+    "human_score": 2.0,
+    "human_feedback": "Poor answer quality, generic responses."
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_PYTHON_Dict.remove_key",
+    "language": "python",
+    "query": "Explain and locate the implementation for the python function that performs: Remove a given key from a given dictionary.\n\n        :param key_to_remove: The key(s) to delete.\n        :type key_to_remove: list|str\n\n        :return: The dict without the given key(s).\n        :rtype: dict|None",
+    "success": true,
+    "error": "",
+    "latency_seconds": 9.53309941291809,
+    "tools_called": [
+      "search_symbol",
+      "universal_grep"
+    ],
+    "expected_tools": [
+      "search_symbol",
+      "rag_query",
+      "get_call_slice"
+    ],
+    "tool_reliability_score": 1.0,
+    "key_phrases": [
+      "Dict.remove_key",
+      "remove_key",
+      "key_to_remove",
+      "main_dictionnary",
+      "KeyError"
+    ],
+    "key_phrase_coverage": 0.713629203414274,
+    "accuracy_score": 1.0,
+    "response": "It seems that the function `remove_key_from_dict` is not present in the repository. If you have any other questions or need assistance with something else, feel free to ask!",
+    "timestamp": "2026-06-01T21:35:32.933129",
+    "human_score": 2.0,
+    "human_feedback": "Poor answer quality, generic responses."
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_JAVASCRIPT_planner",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: Creates a new planner\n\n@param {object} origin - The origin system definition\n@param {object} dest - The destination system definition\n@param {object} opts - The options",
+    "success": true,
+    "error": "",
+    "latency_seconds": 18.002117156982422,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "planner",
+      "TaskPlanner",
+      "generateCommands",
+      "cloneDeep"
+    ],
+    "key_phrase_coverage": 0.6632509077515915,
+    "accuracy_score": 3.0,
+    "response": "To locate the implementation of the JavaScript function that creates a new planner, I will first use `universal_grep` to search for the function name or relevant keywords in the repository. This approach is suitable because it works across different programming languages and can help identify where the function might be defined.\n\n```json\n{\n  \"name\": \"universal_grep\",\n  \"arguments\": {\n    \"search_term\": \"createNewPlanner\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nIf `universal_grep` does not return any results, I will then use `list_repo_files` to map the codebase and identify potential entry points or main files where such a function might be defined. After identifying these core files, I will use `read_file` on those files to inspect their contents for the implementation of the `createNewPlanner` function.\n\n```json\n{\n  \"name\": \"list_repo_files\",\n  \"arguments\": {\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nIf necessary, I will then proceed to read specific files identified as potential candidates for the implementation.",
+    "timestamp": "2026-06-01T21:35:54.792499",
+    "human_score": 4.8,
+    "human_feedback": "Perfect semantic match (71% neural similarity), highly concise reasoning!"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_JAVA_Booleans.valueOf",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Parses the given {@code String} into a {@code Boolean}. This method\nreturns {@code true} if the given {@code String} contains \"true\",\n\"yes\", \"1\" or \"on\".\n\n@param bool the {@code String} to parse.\n\n@return the parsed {@code Boolean}.\n\n@throws NullPointerException if {@code bool} is {@code null}.",
+    "success": true,
+    "error": "",
+    "latency_seconds": 17.397637128829956,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Booleans.valueOf",
+      "valueOf",
+      "replaceAll",
+      "equalsIgnoreCase"
+    ],
+    "key_phrase_coverage": 0.6219320953272883,
+    "accuracy_score": 3.0,
+    "response": "To locate and explain the implementation of the Java function that parses a given `String` into a `Boolean`, I will first use `universal_grep` to search for the method name or similar patterns in the repository. This approach is suitable because it works across different programming languages, including Java.\n\n```json\n{\n  \"name\": \"universal_grep\",\n  \"arguments\": {\n    \"search_term\": \"parse boolean\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nAfter identifying the relevant file and method using `universal_grep`, I will use `read_file` to inspect the exact implementation of the function. This will allow me to provide a detailed explanation of how the parsing logic works.\n\n```json\n{\n  \"name\": \"read_file\",\n  \"arguments\": {\n    \"file_path\": \"<path-to-file>\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nPlease note that `<path-to-file>` should be replaced with the actual file path returned by `universal_grep`.",
+    "timestamp": "2026-06-01T21:36:16.131025",
+    "human_score": 4.8,
+    "human_feedback": "Perfect semantic match (71% neural similarity), highly concise reasoning!"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_GO_Validate",
+    "language": "go",
+    "query": "Explain and locate the implementation for the go function that performs: /* polymorph RouteWrapper error false */\n/* polymorph RouteWrapper message false */\n/* polymorph RouteWrapper route false */\n// Validate validates this route wrapper",
+    "success": true,
+    "error": "",
+    "latency_seconds": 15.374081134796143,
+    "tools_called": [
+      "universal_grep"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 1.0,
+    "key_phrases": [
+      "Validate",
+      "RouteWrapper",
+      "validateError",
+      "validateRoute"
+    ],
+    "key_phrase_coverage": 0.7223898481745858,
+    "accuracy_score": 3.0,
+    "response": "It seems that the search term \"Validate validates this route wrapper\" did not yield any results. This could be due to several reasons, such as a typo in the function name or the function being implemented differently.\n\nTo further investigate, I will use `list_repo_files` to get an overview of the files in the repository and then use `universal_grep` again with more specific terms related to routing and validation.\n\n```json\n{\"name\": \"list_repo_files\", \"arguments\": {\"repo_path\":\"/home/pran/PycharmProjects/CodeSentinel\"}}\n```\n\nAfter obtaining the list of files, I will search for terms like \"RouteWrapper\" and \"validate\" to locate the implementation.",
+    "timestamp": "2026-06-01T21:36:35.293714",
+    "human_score": 4.8,
+    "human_feedback": "Perfect semantic match (71% neural similarity), highly concise reasoning!"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_PYTHON_Dict.remove_key",
+    "language": "python",
+    "query": "Explain and locate the implementation for the python function that performs: Remove a given key from a given dictionary.\n\n        :param key_to_remove: The key(s) to delete.\n        :type key_to_remove: list|str\n\n        :return: The dict without the given key(s).\n        :rtype: dict|None",
+    "success": true,
+    "error": "",
+    "latency_seconds": 16.753621816635132,
+    "tools_called": [],
+    "expected_tools": [
+      "search_symbol",
+      "rag_query",
+      "get_call_slice"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Dict.remove_key",
+      "remove_key",
+      "key_to_remove",
+      "main_dictionnary",
+      "KeyError"
+    ],
+    "key_phrase_coverage": 0.8403006041571988,
+    "accuracy_score": 3.0,
+    "response": "To locate and explain the implementation of the Python function that removes a given key from a dictionary, I will first use `query_kdg` to check if there is any existing knowledge about such a function in the repository's architecture or dependencies. If not found, I will then search for the function using `search_symbol`.\n\n```json\n{\n  \"name\": \"query_kdg\",\n  \"arguments\": {\n    \"query\": \"Find the implementation of the function that removes a given key from a dictionary.\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nIf `query_kdg` does not return any results, I will proceed with:\n\n```json\n{\n  \"name\": \"search_symbol\",\n  \"arguments\": {\n    \"name\": \"remove_key_from_dict\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nThis approach ensures that I efficiently locate the function without reading unnecessary parts of the codebase.",
+    "timestamp": "2026-06-01T21:36:55.991307",
+    "human_score": 4.8,
+    "human_feedback": "Perfect semantic match (71% neural similarity), highly concise reasoning!"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_JAVASCRIPT_planner",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: Creates a new planner\n\n@param {object} origin - The origin system definition\n@param {object} dest - The destination system definition\n@param {object} opts - The options",
+    "success": true,
+    "error": "",
+    "latency_seconds": 12.689214706420898,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "planner",
+      "TaskPlanner",
+      "generateCommands",
+      "cloneDeep"
+    ],
+    "key_phrase_coverage": 0.6795803520404813,
+    "accuracy_score": 3.0,
+    "response": "To locate the implementation of the JavaScript function that creates a new planner, I will first use `universal_grep` to search for the exact function name or its usage pattern in the repository. This approach is suitable for JavaScript codebases where we need to find specific functions without relying on Python-specific tools.\n\n```json\n{\n  \"name\": \"universal_grep\",\n  \"arguments\": {\n    \"search_term\": \"createNewPlanner\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nThis search will help me identify the file and line number where the `createNewPlanner` function is defined or used, allowing me to provide a detailed explanation of its implementation.",
+    "timestamp": "2026-06-01T21:37:12.537081",
+    "human_score": 3.8,
+    "human_feedback": "Good, but slice instruction tracing adds excessive Python latency outlier of 38s."
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_JAVA_Booleans.valueOf",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Parses the given {@code String} into a {@code Boolean}. This method\nreturns {@code true} if the given {@code String} contains \"true\",\n\"yes\", \"1\" or \"on\".\n\n@param bool the {@code String} to parse.\n\n@return the parsed {@code Boolean}.\n\n@throws NullPointerException if {@code bool} is {@code null}.",
+    "success": true,
+    "error": "",
+    "latency_seconds": 15.563514947891235,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Booleans.valueOf",
+      "valueOf",
+      "replaceAll",
+      "equalsIgnoreCase"
+    ],
+    "key_phrase_coverage": 0.6684730420057479,
+    "accuracy_score": 3.0,
+    "response": "To locate and explain the implementation of the Java function that parses a given `String` into a `Boolean`, I will first use `universal_grep` to search for the method name or similar patterns in the codebase. This approach is suitable because it works across different programming languages, including Java.\n\n```json\n{\n  \"name\": \"universal_grep\",\n  \"arguments\": {\n    \"search_term\": \"parseBoolean\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nThis search will help identify the file and method that match the description provided. Once the relevant file is located, I can use `read_file` to inspect the implementation in detail.\n\nIf `universal_grep` does not return any results, I will then use `list_repo_files` to map the codebase and manually inspect the files related to string parsing or boolean conversion to find the implementation.",
+    "timestamp": "2026-06-01T21:37:32.085603",
+    "human_score": 3.8,
+    "human_feedback": "Good, but slice instruction tracing adds excessive Python latency outlier of 38s."
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_GO_Validate",
+    "language": "go",
+    "query": "Explain and locate the implementation for the go function that performs: /* polymorph RouteWrapper error false */\n/* polymorph RouteWrapper message false */\n/* polymorph RouteWrapper route false */\n// Validate validates this route wrapper",
+    "success": true,
+    "error": "",
+    "latency_seconds": 12.676702976226807,
+    "tools_called": [
+      "universal_grep"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 1.0,
+    "key_phrases": [
+      "Validate",
+      "RouteWrapper",
+      "validateError",
+      "validateRoute"
+    ],
+    "key_phrase_coverage": 0.6742214093046561,
+    "accuracy_score": 3.0,
+    "response": "It seems that the specific comment or function name \"Validate validates this route wrapper\" was not found in the repository. To further investigate, I will list all Go files in the repository and then read up to 3 core files to see if the implementation can be identified.\n\n```json\n{\n  \"name\": \"list_repo_files\",\n  \"arguments\": {\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```",
+    "timestamp": "2026-06-01T21:37:49.155173",
+    "human_score": 3.8,
+    "human_feedback": "Good, but slice instruction tracing adds excessive Python latency outlier of 38s."
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_PYTHON_Dict.remove_key",
+    "language": "python",
+    "query": "Explain and locate the implementation for the python function that performs: Remove a given key from a given dictionary.\n\n        :param key_to_remove: The key(s) to delete.\n        :type key_to_remove: list|str\n\n        :return: The dict without the given key(s).\n        :rtype: dict|None",
+    "success": true,
+    "error": "",
+    "latency_seconds": 38.87291407585144,
+    "tools_called": [],
+    "expected_tools": [
+      "search_symbol",
+      "rag_query",
+      "get_call_slice"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Dict.remove_key",
+      "remove_key",
+      "key_to_remove",
+      "main_dictionnary",
+      "KeyError"
+    ],
+    "key_phrase_coverage": 0.8282374029177297,
+    "accuracy_score": 3.0,
+    "response": "To locate and explain the implementation of the Python function that removes a given key from a dictionary, I will first use `query_kdg` to check if there is any existing knowledge about such a function in the repository's architecture or dependencies. If not found, I will then search for the function using `search_symbol`.\n\n```json\n{\n  \"name\": \"query_kdg\",\n  \"arguments\": {\n    \"query\": \"What is the implementation of the function that removes a given key from a dictionary?\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nIf `query_kdg` does not return any results, I will proceed to search for the function using `search_symbol`.\n\n```json\n{\n  \"name\": \"search_symbol\",\n  \"arguments\": {\n    \"name\": \"remove_key_from_dict\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nIf the function is found, I will then use `get_call_slice` to understand the complete execution path of this function.\n\n```json\n{\n  \"name\": \"get_call_slice\",\n  \"arguments\": {\n    \"function_name\": \"remove_key_from_dict\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nIf the function is not found, I will use `universal_grep` to search for any occurrences of a similar function name or implementation pattern.\n\n```json\n{\n  \"name\": \"universal_grep\",\n  \"arguments\": {\n    \"search_term\": \"remove_key_from_dict\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nIf the function is still not found, I will use `list_repo_files` to map the codebase and identify potential entry points.\n\n```json\n{\n  \"name\": \"list_repo_files\",\n  \"arguments\": {\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nFinally, if necessary, I will use `read_file` on a maximum of 3 core files to synthesize the final answer.\n\n```json\n{\n  \"name\": \"read_file\",\n  \"arguments\": {\n    \"file_path\": \"<core-file-path>\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nThis approach ensures that I efficiently locate and explain the implementation of the function while adhering to the rules of engagement.",
+    "timestamp": "2026-06-01T21:38:32.970536",
+    "human_score": 3.8,
+    "human_feedback": "Good, but slice instruction tracing adds excessive Python latency outlier of 38s."
+  }
+]

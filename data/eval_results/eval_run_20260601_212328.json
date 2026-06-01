@@ -1,0 +1,319 @@
+[
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_JAVASCRIPT_planner",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: Creates a new planner\n\n@param {object} origin - The origin system definition\n@param {object} dest - The destination system definition\n@param {object} opts - The options",
+    "success": true,
+    "error": "",
+    "latency_seconds": 11.044758558273315,
+    "tools_called": [
+      "search_symbol"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "planner",
+      "TaskPlanner",
+      "generateCommands",
+      "cloneDeep"
+    ],
+    "key_phrase_coverage": 0.25,
+    "accuracy_score": 1.0,
+    "response": "It seems that the function `createNewPlanner` is not present in the specified repository. If you have more details about where this function might be located or what it does, I can help you search for it again with a refined query. Alternatively, if you need assistance with another part of your codebase, feel free to ask!",
+    "timestamp": "2026-06-01T21:21:38.012242"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_JAVA_Booleans.valueOf",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Parses the given {@code String} into a {@code Boolean}. This method\nreturns {@code true} if the given {@code String} contains \"true\",\n\"yes\", \"1\" or \"on\".\n\n@param bool the {@code String} to parse.\n\n@return the parsed {@code Boolean}.\n\n@throws NullPointerException if {@code bool} is {@code null}.",
+    "success": true,
+    "error": "",
+    "latency_seconds": 9.719110012054443,
+    "tools_called": [
+      "search_symbol",
+      "universal_grep"
+    ],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 1.0,
+    "key_phrases": [
+      "Booleans.valueOf",
+      "valueOf",
+      "replaceAll",
+      "equalsIgnoreCase"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "It seems that the function `parseBoolean` is not present in the repository. If you have any other questions or need further assistance, feel free to ask!",
+    "timestamp": "2026-06-01T21:21:51.395398"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_JAVASCRIPT_planner",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: Creates a new planner\n\n@param {object} origin - The origin system definition\n@param {object} dest - The destination system definition\n@param {object} opts - The options",
+    "success": true,
+    "error": "",
+    "latency_seconds": 11.722163438796997,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "planner",
+      "TaskPlanner",
+      "generateCommands",
+      "cloneDeep"
+    ],
+    "key_phrase_coverage": 0.25,
+    "accuracy_score": 3.0,
+    "response": "To locate the implementation of the JavaScript function that creates a new planner, I will first use `universal_grep` to search for the exact function name or its usage pattern in the repository. This approach is suitable for JavaScript codebases where we need to find specific functions without relying on Python-specific tools.\n\n```json\n{\n  \"name\": \"universal_grep\",\n  \"arguments\": {\n    \"search_term\": \"createNewPlanner\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nThis search will help me identify the file and line number where the `createNewPlanner` function is defined or called, allowing me to provide a detailed explanation of its implementation.",
+    "timestamp": "2026-06-01T21:22:06.692726"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_JAVA_Booleans.valueOf",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Parses the given {@code String} into a {@code Boolean}. This method\nreturns {@code true} if the given {@code String} contains \"true\",\n\"yes\", \"1\" or \"on\".\n\n@param bool the {@code String} to parse.\n\n@return the parsed {@code Boolean}.\n\n@throws NullPointerException if {@code bool} is {@code null}.",
+    "success": true,
+    "error": "",
+    "latency_seconds": 17.996126890182495,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Booleans.valueOf",
+      "valueOf",
+      "replaceAll",
+      "equalsIgnoreCase"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 3.0,
+    "response": "To locate and explain the implementation of the Java function that parses a given `String` into a `Boolean`, I will first use the `universal_grep` tool to search for the method signature or key terms within the repository. This approach is suitable because it allows me to find the relevant code without needing to know the exact file path.\n\n```json\n{\n  \"name\": \"universal_grep\",\n  \"arguments\": {\n    \"search_term\": \"Parses the given {@code String} into a {@code Boolean}\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nAfter identifying the file containing this method, I will use `read_file` to inspect the complete implementation. This ensures that I can provide a detailed explanation of how the function works.\n\n```json\n{\n  \"name\": \"read_file\",\n  \"arguments\": {\n    \"file_path\": \"<identified-file-path>\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nOnce I have the file contents, I will analyze the code to explain its functionality and how it handles different input cases.",
+    "timestamp": "2026-06-01T21:22:28.590682"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_JAVASCRIPT_planner",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: Creates a new planner\n\n@param {object} origin - The origin system definition\n@param {object} dest - The destination system definition\n@param {object} opts - The options",
+    "success": true,
+    "error": "",
+    "latency_seconds": 10.119959592819214,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "planner",
+      "TaskPlanner",
+      "generateCommands",
+      "cloneDeep"
+    ],
+    "key_phrase_coverage": 0.25,
+    "accuracy_score": 3.0,
+    "response": "To locate the implementation of the JavaScript function that creates a new planner, I will first use `universal_grep` to search for the exact function name or its usage pattern in the repository. This approach is suitable for JavaScript codebases where we need to find specific functions without relying on Python-specific tools.\n\n```json\n{\n  \"name\": \"universal_grep\",\n  \"arguments\": {\n    \"search_term\": \"function that creates a new planner\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```",
+    "timestamp": "2026-06-01T21:22:42.392884"
+  },
+  {
+    "model": "qwen2.5-coder:14b",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_JAVA_Booleans.valueOf",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Parses the given {@code String} into a {@code Boolean}. This method\nreturns {@code true} if the given {@code String} contains \"true\",\n\"yes\", \"1\" or \"on\".\n\n@param bool the {@code String} to parse.\n\n@return the parsed {@code Boolean}.\n\n@throws NullPointerException if {@code bool} is {@code null}.",
+    "success": true,
+    "error": "",
+    "latency_seconds": 17.835495471954346,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Booleans.valueOf",
+      "valueOf",
+      "replaceAll",
+      "equalsIgnoreCase"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 3.0,
+    "response": "To locate and explain the implementation of the Java function that parses a given `String` into a `Boolean`, I will first use `universal_grep` to search for the method name or similar patterns in the repository. This approach is suitable because it works across different programming languages, including Java.\n\n```json\n{\n  \"name\": \"universal_grep\",\n  \"arguments\": {\n    \"search_term\": \"parse boolean\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nAfter identifying the relevant file and method using `universal_grep`, I will use `read_file` to inspect the exact implementation of the function. This will allow me to provide a detailed explanation of how the parsing logic works.\n\n```json\n{\n  \"name\": \"read_file\",\n  \"arguments\": {\n    \"file_path\": \"<path-to-file>\",\n    \"repo_path\": \"/home/pran/PycharmProjects/CodeSentinel\"\n  }\n}\n```\n\nPlease note that `<path-to-file>` should be replaced with the actual file path returned by `universal_grep`.",
+    "timestamp": "2026-06-01T21:23:04.228726"
+  },
+  {
+    "model": "deepseek-coder:6.7b",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_JAVASCRIPT_planner",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: Creates a new planner\n\n@param {object} origin - The origin system definition\n@param {object} dest - The destination system definition\n@param {object} opts - The options",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/deepseek-coder:6.7b does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.0367124080657959,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "planner",
+      "TaskPlanner",
+      "generateCommands",
+      "cloneDeep"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T21:23:08.336231"
+  },
+  {
+    "model": "deepseek-coder:6.7b",
+    "prompt_version": "v1_baseline",
+    "query_id": "CSN_JAVA_Booleans.valueOf",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Parses the given {@code String} into a {@code Boolean}. This method\nreturns {@code true} if the given {@code String} contains \"true\",\n\"yes\", \"1\" or \"on\".\n\n@param bool the {@code String} to parse.\n\n@return the parsed {@code Boolean}.\n\n@throws NullPointerException if {@code bool} is {@code null}.",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/deepseek-coder:6.7b does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.03916168212890625,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Booleans.valueOf",
+      "valueOf",
+      "replaceAll",
+      "equalsIgnoreCase"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T21:23:12.423130"
+  },
+  {
+    "model": "deepseek-coder:6.7b",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_JAVASCRIPT_planner",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: Creates a new planner\n\n@param {object} origin - The origin system definition\n@param {object} dest - The destination system definition\n@param {object} opts - The options",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/deepseek-coder:6.7b does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.03377985954284668,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "planner",
+      "TaskPlanner",
+      "generateCommands",
+      "cloneDeep"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T21:23:16.497048"
+  },
+  {
+    "model": "deepseek-coder:6.7b",
+    "prompt_version": "v2_rules_of_engagement",
+    "query_id": "CSN_JAVA_Booleans.valueOf",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Parses the given {@code String} into a {@code Boolean}. This method\nreturns {@code true} if the given {@code String} contains \"true\",\n\"yes\", \"1\" or \"on\".\n\n@param bool the {@code String} to parse.\n\n@return the parsed {@code Boolean}.\n\n@throws NullPointerException if {@code bool} is {@code null}.",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/deepseek-coder:6.7b does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.0233612060546875,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Booleans.valueOf",
+      "valueOf",
+      "replaceAll",
+      "equalsIgnoreCase"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T21:23:20.566448"
+  },
+  {
+    "model": "deepseek-coder:6.7b",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_JAVASCRIPT_planner",
+    "language": "javascript",
+    "query": "Explain and locate the implementation for the javascript function that performs: Creates a new planner\n\n@param {object} origin - The origin system definition\n@param {object} dest - The destination system definition\n@param {object} opts - The options",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/deepseek-coder:6.7b does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.03182077407836914,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "planner",
+      "TaskPlanner",
+      "generateCommands",
+      "cloneDeep"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T21:23:24.664932"
+  },
+  {
+    "model": "deepseek-coder:6.7b",
+    "prompt_version": "v3_slice_focused",
+    "query_id": "CSN_JAVA_Booleans.valueOf",
+    "language": "java",
+    "query": "Explain and locate the implementation for the java function that performs: Parses the given {@code String} into a {@code Boolean}. This method\nreturns {@code true} if the given {@code String} contains \"true\",\n\"yes\", \"1\" or \"on\".\n\n@param bool the {@code String} to parse.\n\n@return the parsed {@code Boolean}.\n\n@throws NullPointerException if {@code bool} is {@code null}.",
+    "success": false,
+    "error": "Error code: 400 - {'error': {'message': 'registry.ollama.ai/library/deepseek-coder:6.7b does not support tools', 'type': 'invalid_request_error', 'param': None, 'code': None}}",
+    "latency_seconds": 0.026409149169921875,
+    "tools_called": [],
+    "expected_tools": [
+      "rag_query",
+      "universal_grep"
+    ],
+    "tool_reliability_score": 0.0,
+    "key_phrases": [
+      "Booleans.valueOf",
+      "valueOf",
+      "replaceAll",
+      "equalsIgnoreCase"
+    ],
+    "key_phrase_coverage": 0.0,
+    "accuracy_score": 1.0,
+    "response": "",
+    "timestamp": "2026-06-01T21:23:28.740717"
+  }
+]

@@ -2,6 +2,9 @@ from langchain_core.tools import tool
 from ingestion.indexer import load_persisted_index
 import config
 
+_cached_index = None
+_cached_index_dir = None
+
 @tool
 def rag_query(query: str) -> str:
     """
@@ -12,14 +15,17 @@ def rag_query(query: str) -> str:
     Args:
         query: A natural language description of what to find (e.g., 'authentication logic').
     """
+    global _cached_index, _cached_index_dir
     print(f"[Tool: RAG] Searching vector DB for: '{query}'...")
     try:
-        # FIX: We load the index fresh from the disk every single time.
-        # This guarantees we are always searching the most recently ingested repository,
-        # never a stale one left over in memory.
-        index = load_persisted_index(config.INDEX_DIR)
-        retriever = index.as_retriever(similarity_top_k=5)
-        
+        if _cached_index is None or _cached_index_dir != config.INDEX_DIR:
+            print(f"[Tool: RAG] Loading FAISS index from disk ({config.INDEX_DIR})...")
+            _cached_index = load_persisted_index(config.INDEX_DIR)
+            _cached_index_dir = config.INDEX_DIR
+        else:
+            print("[Tool: RAG] Using in-memory cached FAISS index.")
+            
+        retriever = _cached_index.as_retriever(similarity_top_k=5)
         nodes = retriever.retrieve(query)
         
         if not nodes:

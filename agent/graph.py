@@ -38,6 +38,18 @@ tools_list = [
 ]
 llm_with_tools = llm.bind_tools(tools_list)
 
+def set_agent_model(model_name: str):
+    """Dynamically re-binds the LLM node to a new model."""
+    global llm_with_tools, llm
+    print(f"[*] Switching agent LLM model to: {model_name}")
+    llm = ChatOpenAI(
+        model=model_name,
+        base_url='http://localhost:11434/v1',
+        api_key='ollama',
+        temperature=0.1
+    )
+    llm_with_tools = llm.bind_tools(tools_list)
+
 # 3. Define the Agent Node (With Ollama Fallback Parser)
 def run_agent(state: AgentState):
     """The node where the LLM evaluates the state and decides what to do."""
